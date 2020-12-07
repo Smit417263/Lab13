@@ -32,8 +32,8 @@ int main(void) {
 
     while (1) {
 		temp = ADC;
-		PORTB = input & 0xFF;
-		PORTD = input >> 8;
+		PORTB = temp & 0xFF;
+		PORTD = temp >> 8;
     }
     return 1;
 }
