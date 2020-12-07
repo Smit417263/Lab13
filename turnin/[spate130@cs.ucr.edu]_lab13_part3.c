@@ -238,15 +238,15 @@ int main(void) {
 	tasks[i].elapsedTime = 0;
 	tasks[i].TickFct = &tick_1;
 	i++;
-    tasks[i].state = start_3;
-    tasks[i].period = 50;
-    tasks[i].elapsedTime = 0;
-    tasks[i].TickFct = &tick_3;
+    	tasks[i].state = start_3;
+    	tasks[i].period = 50;
+    	tasks[i].elapsedTime = 0;
+    	tasks[i].TickFct = &tick_3;
 	i++;
 	tasks[i].state = start_2;
-    tasks[i].period = 50;
-    tasks[i].elapsedTime = 0;
-    tasks[i].TickFct = &tick_2;
+	tasks[i].period = 50;
+    	tasks[i].elapsedTime = 0;
+    	tasks[i].TickFct = &tick_2;
 	TimerSet(50);
 	TimerOn();
 
